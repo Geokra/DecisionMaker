@@ -4,7 +4,7 @@ a = True
 n = 1
 
 print("Dies ist ein Programm welches es Ihnen einfach machen soll Entscheidungen zu treffen.")
-print("Geben Sie Ihre möglichen Entscheidungen bitte mit ',' getrennt ein")
+print("Geben Sie die Entscheidung bitte ein.")
 
 antlist = []
 
