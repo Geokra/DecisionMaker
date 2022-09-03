@@ -9,17 +9,17 @@ print("Geben Sie Ihre möglichen Entscheidungen bitte mit ',' getrennt ein")
 antlist = []
 
 while a:
-    print("Entscheidung " + str(n) + ": ")
-    antwort = input()
-    antlist.append(antwort)
-    i = input("Weitere Entscheidung? J/N: ")
-    n += 1
-    if i == "N":
+    print("Entscheidung " + str(n) + ": ")          
+    antwort = input()                           # Eingabe der Entscheidung als String
+    antlist.append(antwort)                     # Hinzufügen der Entscheidung zur Entscheidungs-Liste
+    i = input("Weitere Entscheidung? J/N: ")    # Abfrage ob weitere Entscheidungen hinzugefügt werden sollen
+    n += 1                                      # Erhöhen des Zählers für Entscheidungsanzahl
+    if i == "N":                                # Check ob bei Abfrage (Zeile 15) die zweite Option gewählt wurde -> Programm While-Schleife stoppt bei in diesem Fall     
         break
 
-antwort = random.choice(antlist)
+antwort = random.choice(antlist)                # Pseudozufälliges auswählen einer Entscheidung aus der Liste
 
-print("Entscheidung fiel auf: " + antwort)
+print("Entscheidung fiel auf: " + antwort)      # Ausgeben dieser Entscheidung
 
 
  
